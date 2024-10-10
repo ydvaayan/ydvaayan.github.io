@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aayan Yadav</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- For icons -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Aayan Yadav</h1>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#pub">Publications</a></li>
+                <li><a href="#proj">Projects</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <!-- <div class="theme-toggle">
+                    <i class="fas fa-sun"></i>
+                </div> -->
+            </ul>
+            
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Profile Image -->
+            <div class="profile-photo">
+              <img src="assets/images/ion1.jpeg" alt="Aayan Yadav">
+              <h2 style="text-align: center;">Aayan Yadav</h2>
+              <p style="text-align: center;">BTech Student<br>IIT Roorkee</p>
+
+              <div class="contact-icons">
+                <a href="mailto:ydvaayan@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="CV.pdf"><i class="fas fa-file"></i></a>
+                <a href="https://github.com/ydvaayan"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/aayanyadav09/"><i class="fab fa-linkedin"></i></a> 
+                <a href="https://x.com/ionydv"><i class="fab fa-twitter"></i></a>   
+              </div>
+            </div>
+        
+            <!-- About Me Section -->
+            <div class="about-section">
+            <h3>About Me</h3>
+            <p>I am a third-year student at the Mehta Family School of Data Science and Artificial Intelligence at IIT Roorkee. I am interested in Computer Vision. I have worked with segmentation and datasets. I am currently exploring topics like diffusion and video anomaly detection.</p>
+            <div class="news-section">
+                <div class="news-header" onclick="toggleNews()">
+                  <span id="news-icon">▸</span> <!-- This icon will change based on toggle -->
+                  <p>News</p>
+                </div>
+                <ul id="news-content">
+                  <li><strong>[July 2024]: <a href="https://cocorem.xyz">COCO-ReM</a> is accepted to ECCV 2024 !</li>
+                  <li><strong>[December 2023]: Reached finals of Smart India Hackathon 2023 !</li>
+                  <li><strong>[October 2022]: Joining IIT Roorkee as a Bachelors student.</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          <div class="publications-section" id ="pub">
+            <h1>Publications</h1>
+          
+            <div class="publication-item">
+              <div class="publication-image">
+                <img src="assets/images/cocorem_intro_figure-1.png" alt="COCO-ReM Image">
+              </div>
+              <div class="publication-details">
+                <h3>Benchmarking Object Detectors with COCO: A New Path Forward</h3>
+                <p>Shweta Singh<sup>*</sup>, <strong>Aayan Yadav<sup>*</sup></strong>, Jitesh Jain, Humphrey Shi, Justin Johnson, Karan Desai</p>
+                <div class="publication-links">
+                  <a href ="https://eccv.ecva.net/virtual/2024" >ECCV 2024</a>
+                  <a href="https://arxiv.org/abs/2403.18819">paper</a> | 
+                  <a href="#">bibtex</a> | 
+                  <a href="https://github.com/kdexd/coco-rem">code</a> |
+                  <a href="https://cocorem.xyz/">website</a> 
+                </div>
+              </div>
+            </div>
+        
+            <!-- Add more publication items in similar format -->
+          
+          </div>
+          <div class="blog-section" id ='blogs'>
+            <h1>Blogs</h1>
+            <div class="blog-post">
+              <h2>Dismantling Disentanglement in VAEs</h2>
+              <p>In this blog post I give a brief introduction of variational autoencoders and 
+                then explain how we can acieve disentanglement in latent space. It is an explanation of <a href"https://arxiv.org/pdf/1606.05579">this</a> paper.</p>
+              <a href="#">Read more</a>
+            </div>
+          
+            <div class="blog-post">
+              <h2>Activation Functions</h2>
+              <p>This is a beginner's introduction to activation functions.
+                 This was my first ever blog which I wrote for Blogathon organised by DSG IITR !</p>
+              <a href="https://medium.com/@ydvaayan/activation-functions-b28c9083c0f3">Read more</a>
+            </div>
+          
+          </div>
+          
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Aayan Yadav </p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
