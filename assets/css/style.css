@@ -63,12 +63,15 @@ h1 {
     margin: 40px 0; /* Space around the entire section */
 }
 
+
 .profile-photo img {
+    margin-left:40px ;
     width: 160px;
     height: 160px;
     border-radius: 50%;
     border: 3px solid #fff;
 }
+
 
 .profile-info {
     max-width: 600px; /* Limit width of the text section */
@@ -184,9 +187,11 @@ footer {
     margin: 0 auto;
   }
   .publications-section h1{
-    font-size: 26px;
-    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
 }
+
   .publication-item {
     display: flex;
     margin-bottom: 40px;
@@ -239,7 +244,11 @@ footer {
     width: 80%;
     margin: 0 auto;
   }
-  
+  .blog-section h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
   .blog-post {
     /* background-color: #f9f9f9; Example background color */
     padding: 15px;
@@ -260,6 +269,45 @@ footer {
   }
   
   .blog-post a:hover {
+    text-decoration: underline;
+  }
+
+  .projects-section {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Space between blog posts */
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .projects-section h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+  
+  .project {
+    /* background-color: #fff; */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project h2 {
+    margin-top: 0;
+  }
+  
+  .project p {
+    margin: 10px 0;
+  }
+  
+  .project a {
+    color: #00b8d4;
+    text-decoration: none;
+  }
+  
+  .project a:hover {
     text-decoration: underline;
   }
 
