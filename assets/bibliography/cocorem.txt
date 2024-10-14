@@ -1,0 +1,8 @@
+@inproceedings{singh2025benchmarking,
+  title={Benchmarking Object Detectors with COCO: A New Path Forward},
+  author={Singh, Shweta and Yadav, Aayan and Jain, Jitesh and Shi, Humphrey and Johnson, Justin and Desai, Karan},
+  booktitle={European Conference on Computer Vision},
+  pages={279--295},
+  year={2025},
+  organization={Springer}
+}
