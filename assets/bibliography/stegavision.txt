@@ -1,0 +1,6 @@
+@article{kumar2024stegavision,
+  title={StegaVision: Enhancing Steganography with Attention Mechanism},
+  author={Kumar, Abhinav and Singla, Pratham and Yadav, Aayan},
+  journal={arXiv preprint arXiv:2411.05838},
+  year={2024}
+}
