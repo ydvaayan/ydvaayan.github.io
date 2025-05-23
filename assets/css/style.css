@@ -306,11 +306,7 @@ footer {
 }
 
 @media (max-width: 700px) {
-  .profile-section {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 1rem;
-  }
+
   nav {
       flex-direction: column;
       align-items: flex-start;
@@ -322,5 +318,123 @@ footer {
       flex-direction: column;
       gap: 0.7rem;
       align-items: flex-start;
+  }
+}
+/* Responsive Navbar Styles */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--white);
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.nav-toggle span {
+  height: 3px;
+  width: 25px;
+  background: var(--white);
+  margin-bottom: 5px;
+  border-radius: 2px;
+  display: block;
+}
+
+@media (max-width: 700px) {
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background: var(--primary);
+      position: absolute;
+      top: 60px;
+      left: 0;
+      padding: 1rem 0;
+      border-radius: 0 0 10px 10px;
+      box-shadow: 0 4px 8px rgba(44,62,80,0.2);
+      z-index: 99;
+  }
+  .nav-links.active {
+      display: flex;
+  }
+  .nav-links li {
+      margin: 0.5rem 0;
+      text-align: center;
+  }
+  .nav-toggle {
+      display: flex;
+  }
+}
+
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  margin: 2.5rem 0;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.profile-photo {
+  flex-shrink: 0;
+}
+
+.profile-photo img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #2c3e50;
+  background: #fff;
+  display: block;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.profile-info h2 {
+  margin: 0 0 0.3rem 0;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.profile-info p {
+  margin: 0 0 1.2rem 0;
+  color: #34495e;
+  font-size: 1.15rem;
+}
+
+.contact-icons {
+  display: flex;
+  gap: 1.3rem;
+  margin-top: 0.3rem;
+}
+
+.contact-icons a {
+  color: #2c3e50;
+  font-size: 1.6rem;
+  transition: color 0.2s;
+}
+
+.contact-icons a:hover {
+  color: #2980b9;
+}
+
+@media (max-width: 700px) {
+  .profile-section {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1.5rem;
+  }
+  .profile-info {
+      align-items: center;
   }
 }
