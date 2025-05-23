@@ -1,172 +1,155 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aayan Yadav</title>
+    <title>Aayan Yadav | Research Portfolio</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- For icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <nav>
-            <h3>Aayan Yadav</h3>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#pub">Publications</a></li>
-                <li><a href="#proj">Projects</a></li>
-                <li><a href="#blogs">Blogs</a></li>
-                <!-- <div class="theme-toggle">
-                    <i class="fas fa-sun"></i>
-                </div> -->
-            </ul>
-            
+            <div class="nav-container">
+                <h3 class="logo">Aayan Yadav</h3>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#pub">Publications</a></li>
+                    <li><a href="#proj">Projects</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <main>
-        <div class="container">
-            <!-- Profile Image -->
+        <section class="profile-section">
             <div class="profile-photo">
-              <img src="assets/images/ion1.jpeg" alt="Aayan Yadav">
-              <h2 style="text-align: center;">Aayan Yadav</h2>
-              <p style="text-align: center;">BTech Student<br>IIT Roorkee</p>
-
-              <div class="contact-icons">
-                <a href="mailto:ydvaayan@gmail.com"><i class="fas fa-envelope"></i></a>
-                <a href="CV.pdf"><i class="fas fa-file"></i></a>
-                <a href="https://github.com/ydvaayan"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/aayanyadav09/"><i class="fab fa-linkedin"></i></a> 
-                <a href="https://x.com/ionydv"><i class="fab fa-twitter"></i></a>   
-              </div>
+                <img src="assets/images/ion1.jpeg" alt="Aayan Yadav">
             </div>
-        
-            <!-- About Me Section -->
-            <div class="about-section">
+            <div class="profile-info">
+                <h2>Aayan Yadav</h2>
+                <p>BTech Student<br>IIT Roorkee</p>
+                <div class="contact-icons">
+                    <a href="mailto:ydvaayan@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="CV.pdf" title="CV"><i class="fas fa-file"></i></a>
+                    <a href="https://github.com/ydvaayan" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/aayanyadav09/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://x.com/ionydv" title="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
             <h3>About Me</h3>
-            <p>I am a third-year student at the Mehta Family School of Data Science and Artificial Intelligence at IIT Roorkee. I am interested in Computer Vision. I have worked with segmentation, datasets and AI - generated image detection. I am currently interested in 3D vision. Hence exploring different topics like 3D reconstruction and generation, SLAM and depth estimation. I am currently looking for exciting projects in 3D if you have any ideas or openings please reach out !  </p>
+            <p>
+                I am a third-year student at the Mehta Family School of Data Science and Artificial Intelligence at IIT Roorkee. I am interested in Computer Vision. I have worked with segmentation, datasets and AI-generated image detection. I am currently interested in 3D vision, exploring topics like 3D reconstruction and generation, SLAM, and depth estimation. I am currently looking for exciting projects in 3D—if you have any ideas or openings, please reach out!
+            </p>
             <div class="news-section">
                 <div class="news-header" onclick="toggleNews()">
-                  <span id="news-icon">▸</span> <!-- This icon will change based on toggle -->
-                  <p>News</p>
+                    <span id="news-icon">▸</span>
+                    <span class="news-title">News</span>
                 </div>
                 <ul id="news-content">
-                  <li><strong>[April 2025]: Joining AuraML as Research Intern !</li>
-                  <li><strong>[July 2024]: <a href="https://cocorem.xyz">COCO-ReM</a> is accepted to ECCV 2024 !</li>
-                  <li><strong>[December 2023]: Reached finals of Smart India Hackathon 2023 !</li>
-                  <li><strong>[October 2022]: Joining IIT Roorkee as a bachelors student.</li>
+                    <li><strong>[April 2025]:</strong> Joining AuraML as Research Intern!</li>
+                    <li><strong>[July 2024]:</strong> <a href="https://cocorem.xyz">COCO-ReM</a> is accepted to ECCV 2024!</li>
+                    <li><strong>[December 2023]:</strong> Reached finals of Smart India Hackathon 2023!</li>
+                    <li><strong>[October 2022]:</strong> Joining IIT Roorkee as a bachelors student.</li>
                 </ul>
-              </div>
             </div>
+        </section>
 
-          </div>
-          <div class="publications-section" id ="pub">
+        <section class="publications-section" id="pub">
             <h1>Publications</h1>
-          
             <div class="publication-item">
-              <div class="publication-image">
-                <img src="assets/images/cocorem_intro_figure-1.png" alt="COCO-ReM Image">
-              </div>
-              <div class="publication-details">
-                <h3>Benchmarking Object Detectors with COCO: A New Path Forward</h3>
-                <p>Shweta Singh<sup>*</sup>, <strong>Aayan Yadav<sup>*</sup></strong>, Jitesh Jain, Humphrey Shi, Justin Johnson, Karan Desai</p>
-                <div class="publication-links">
-                  <a href ="https://eccv.ecva.net/virtual/2024" >ECCV 2024</a>
-                  <a href="https://arxiv.org/abs/2403.18819">paper</a> | 
-                  <a href="assets/bibliography/cocorem.txt">bibtex</a> | 
-                  <a href="https://github.com/kdexd/coco-rem">code</a> |
-                  <a href="https://cocorem.xyz/">website</a> 
+                <div class="publication-image">
+                    <img src="assets/images/cocorem_intro_figure-1.png" alt="COCO-ReM Image">
                 </div>
-              </div>
+                <div class="publication-details">
+                    <h3>Benchmarking Object Detectors with COCO: A New Path Forward</h3>
+                    <p>Shweta Singh<sup>*</sup>, <strong>Aayan Yadav<sup>*</sup></strong>, Jitesh Jain, Humphrey Shi, Justin Johnson, Karan Desai</p>
+                    <div class="publication-links">
+                        <a href="https://eccv.ecva.net/virtual/2024">ECCV 2024</a>
+                        <a href="https://arxiv.org/abs/2403.18819">paper</a> |
+                        <a href="assets/bibliography/cocorem.txt">bibtex</a> |
+                        <a href="https://github.com/kdexd/coco-rem">code</a> |
+                        <a href="https://cocorem.xyz/">website</a>
+                    </div>
+                </div>
             </div>
             <div class="publication-item">
-              <div class="publication-image">
-                <img src="assets/images/stego.png" alt="StegaVision Image">
-              </div>
-              <div class="publication-details">
-                <h3>StegaVision: Enhancing Steganography with Attention Mechanism (Student Abstract)</h3>
-                <p>Abhinav Kumar, Pratham Singla,<strong>Aayan Yadav</strong></p>
-                <div class="publication-links">
-                  <a href ="#" >AAAI 2025</a>
-                  <a href="https://arxiv.org/abs/2411.05838">paper</a> | 
-                  <a href="assets/bibliography/stegavision.txt">bibtex</a> | 
-                  <a href="https://github.com/vlgiitr/StegaVision">code</a> |
+                <div class="publication-image">
+                    <img src="assets/images/stego.png" alt="StegaVision Image">
                 </div>
-              </div>
+                <div class="publication-details">
+                    <h3>StegaVision: Enhancing Steganography with Attention Mechanism (Student Abstract)</h3>
+                    <p>Abhinav Kumar, Pratham Singla, <strong>Aayan Yadav</strong></p>
+                    <div class="publication-links">
+                        <a href="#">AAAI 2025</a>
+                        <a href="https://arxiv.org/abs/2411.05838">paper</a> |
+                        <a href="assets/bibliography/stegavision.txt">bibtex</a> |
+                        <a href="https://github.com/vlgiitr/StegaVision">code</a>
+                    </div>
+                </div>
             </div>
             <div class="publication-item">
-              <div class="publication-image">
-                <img src="assets/images/proteus.png" alt="Proteus Image">
-              </div>
-              <div class="publication-details">
-                <h3>Provenance Detection for AI-Generated Images: Combining Perceptual Hashing,
-                  Homomorphic Encryption, and AI Detection Models</h3>
-                <p>Shree Singhi,<strong> Aayan Yadav</strong>, Aayush Gupta, Shariar Ebrahimi, Parisa Hassanizadeh</p>
-                <div class="publication-links">
-                  <a href ="#" >AAAI 2025</a>
-                  <a href="https://arxiv.org/abs/2503.11195">paper</a> | 
-                  <a href="assets/bibliography/proteus.txt">bibtex</a> | 
-                  <a href="https://github.com/proteus-photos/ai-based-detector">code</a> |
+                <div class="publication-image">
+                    <img src="assets/images/proteus.png" alt="Proteus Image">
                 </div>
-              </div>
+                <div class="publication-details">
+                    <h3>Provenance Detection for AI-Generated Images: Combining Perceptual Hashing, Homomorphic Encryption, and AI Detection Models</h3>
+                    <p>Shree Singhi, <strong>Aayan Yadav</strong>, Aayush Gupta, Shariar Ebrahimi, Parisa Hassanizadeh</p>
+                    <div class="publication-links">
+                        <a href="#">Under Review</a>
+                        <a href="https://arxiv.org/abs/2503.11195">paper</a> |
+                        <a href="assets/bibliography/proteus.txt">bibtex</a> |
+                        <a href="https://github.com/proteus-photos/ai-based-detector">code</a>
+                    </div>
+                </div>
             </div>
-            <!-- Add more publication items in similar format -->
-          
-          </div>
+        </section>
 
-          <div id="proj" class="projects-section">
+        <section class="projects-section" id="proj">
             <h1>Projects</h1>
+            <div class="project">
+                <h2>Sirius</h2>
+                <p>An agentic RAG system using SoTA techniques like AdaRAG, PlanRAG, HyDE, SPLADE, MetRAG, RRF etc.</p>
+                <a href="https://github.com/InterIIT24-IITR/Sirius" target="_blank">GitHub</a>
+            </div>
+            <div class="project">
+                <h2>MedMatcher</h2>
+                <p>Similar Document Template Matching for Medical Dataset. Fine-tuned LayoutLMv3 model on custom medical document dataset using weighted cross entropy loss and minibatch gradient descent.</p>
+                <a href="https://github.com/ydvaayan/MedMatcher" target="_blank">GitHub</a>
+            </div>
+            <div class="project">
+                <h2>Image Captioning Model</h2>
+                <p>Build an image captioning model using transfer learning techniques on the Flickr8k dataset. We fine-tuned a combination of pretrained Inceptionv3 and LSTM with regularization.</p>
+                <a href="https://github.com/yourgithub/project2" target="_blank">GitHub</a>
+            </div>
+        </section>
 
-            <div class="project">
-              <h2>Sirius</h2>
-              <p>An agentic RAG system using SoTA techniques like AdaRAG, PlanRAG, HyDE, SPLADE, MetRAG, RRF etc.</p>
-                gradient descent.</p>
-              <a href="https://github.com/InterIIT24-IITR/Sirius" target="_blank">GitHub</a> 
-              <!-- <a href="https://live-demo-link.com" target="_blank">Live Demo</a> -->
-            </div>
-          
-            <div class="project">
-              <h2>MedMatcher</h2>
-              <p>Similar Document Template Matching for Medical Dataset. Fine-tuned LayoutLMv3 model on custom medical document dataset using weighted cross entropy loss and minibatch
-                gradient descent.</p>
-              <a href="https://github.com/ydvaayan/MedMatcher" target="_blank">GitHub</a> 
-              <!-- <a href="https://live-demo-link.com" target="_blank">Live Demo</a> -->
-            </div>
-          
-            <div class="project">
-              <h2>Image Captioning Model</h2>
-              <p>Build an image captioning model using transfer learning techniques on the Flickr8k dataset. We fine-tuned a combination
-                of pretrained Inceptionv3 and LSTM with regularization.</p>
-              <a href="https://github.com/yourgithub/project2" target="_blank">GitHub</a> 
-              <!-- <a href="https://live-demo-link.com" target="_blank">Live Demo</a> -->
-            </div>
-
-        </div>
-          
-          <div class="blog-section" id ='blogs'>
+        <section class="blog-section" id="blogs">
             <h1>Blogs</h1>
             <div class="blog-post">
-              <h2>Dismantling Disentanglement in VAEs</h2>
-              <p>In this blog post I give a brief introduction of variational autoencoders and 
-                then explain how we can acieve disentanglement in latent space. It is an explanation of <a href="https://arxiv.org/pdf/1606.05579">this</a> paper.</p>
-              <a href="https://beautiful-cornflower-4ff.notion.site/Dismantling-Disentanglement-in-VAEs-b67da08d9f654389abc83750387a48e1?pvs=74">Read more</a>
+                <h2>Dismantling Disentanglement in VAEs</h2>
+                <p>
+                    In this blog post I give a brief introduction of variational autoencoders and then explain how we can achieve disentanglement in latent space. It is an explanation of <a href="https://arxiv.org/pdf/1606.05579">this</a> paper.
+                </p>
+                <a href="https://beautiful-cornflower-4ff.notion.site/Dismantling-Disentanglement-in-VAEs-b67da08d9f654389abc83750387a48e1?pvs=74" target="_blank">Read more</a>
             </div>
-          
             <div class="blog-post">
-              <h2>Activation Functions</h2>
-              <p>This is a beginner's introduction to activation functions.
-                 This was my first ever blog which I wrote for Blogathon organised by DSG IITR !</p>
-              <a href="https://medium.com/@ydvaayan/activation-functions-b28c9083c0f3">Read more</a>
+                <h2>Activation Functions</h2>
+                <p>
+                    This is a beginner's introduction to activation functions. This was my first ever blog which I wrote for Blogathon organised by DSG IITR!
+                </p>
+                <a href="https://medium.com/@ydvaayan/activation-functions-b28c9083c0f3" target="_blank">Read more</a>
             </div>
-          
-          </div>
-          
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Aayan Yadav </p>
+        <p>&copy; 2024 Aayan Yadav</p>
     </footer>
 
     <script src="assets/js/script.js"></script>
