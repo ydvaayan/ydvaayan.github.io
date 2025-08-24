@@ -441,3 +441,22 @@ footer {
       align-items: center;
   }
 }
+/* 1) Projects & blogs */
+.projects-section .project a {
+  color: var(--accent);
+}
+.blog-section   .blog-post a {
+  color: var(--accent);
+}
+
+/* 2) About & news inline links */
+.about-section a,
+.news-section a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.about-section a:hover,
+.news-section a:hover {
+  text-decoration: underline;
+}
