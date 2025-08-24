@@ -112,7 +112,10 @@ main {
   gap: 1rem;
   margin-top: 0.5rem;
 }
-
+.contact-icons .cv-link {
+  text-decoration: none;
+  font-weight: bold;
+}
 .contact-icons a {
   color: var(--primary);
   font-size: 1.4rem;

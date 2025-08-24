@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.8.6/css/academicons.min.css">
 </head>
 <body>
     <header>
@@ -33,7 +34,10 @@
                 <p>BTech Student<br>IIT Roorkee</p>
                 <div class="contact-icons">
                     <a href="mailto:ydvaayan@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="CV.pdf" title="CV"><i class="fas fa-file"></i></a>
+                    <a href="CV.pdf" title="CV" class="cv-link">CV</a>
+                    <a href="https://scholar.google.com/citations?user=qMaPyzIAAAAJ&hl=en" title="Google Scholar">
+                        <i class="ai ai-google-scholar"></i>
+                      </a>
                     <a href="https://github.com/ydvaayan" title="GitHub"><i class="fab fa-github"></i></a>
                     <a href="https://linkedin.com/in/aayanyadav09/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
                     <a href="https://x.com/ionydv" title="Twitter"><i class="fab fa-twitter"></i></a>
@@ -42,12 +46,14 @@
         </section>
         
         
-
+        
         <section class="about-section">
             <h3>About Me</h3>
             <p>
-                I am a senior at the Mehta Family School of Data Science and Artificial Intelligence at IIT Roorkee. My field of interest is Computer Vision. I have worked with segmentation, datasets and AI-generated image detection. I am currently working on diffusion and 3D scene generation. I am also intrigued by 3D Reconstruction and SLAM and thus exploring these topics in my free time. I am currently looking for exciting projects in 3D—if you have any ideas or openings, please reach out!
-            </p>
+                I am a senior at the Mehta Family School of Data Science and Artificial Intelligence at IIT Roorkee. My current interests include 3D Representations, Reconstruction & SLAM. My aim is to develop data efficient models that understand the physical world.
+            </p><p>Most recently, I interned at <a href="https://auraml.com">AuraML</a> where I worked on text to 3D scene generation.
+                In the past, I had the privilege to work with <a href="https://web.eecs.umich.edu/~justincj/" target="_blank">Prof. Justin Johnson</a> and <a href="https://kdexd.xyz" target="_blank">Dr. Karan Desai</a> on the <a href="https://cocorem.xyz" target="_blank">Benchmarking Object Detectors with COCO: A New Path Forward</a> where we refined annotations of MS COCO dataset. I have also worked with <a href="https://www.iitr.ac.in/~MA/Malikfma" target="_blank">Prof. Sanjeev Kumar</a> on adversarial finetuning of contrastive models. 
+            <p>I am actively looking for opportunities in the field of 3D computer vision. If your work aligns with my interests please reach out !</p>
             <div class="news-section">
                 <div class="news-header" onclick="toggleNews()">
                     <span id="news-icon">▸</span>
@@ -114,6 +120,11 @@
 
         <section class="projects-section" id="proj">
             <h1>Projects</h1>
+            <div class="project">
+                <h2>SLAFCoM: A Study on Loss Functions for Adversarial Finetuning of Contrastive Models</h2>
+                <p>Introduced a Clean Consistency Term in the loss function and experimented with different weights and learning rate to improve adversarial finetuning of contrastive models.</p>
+                <a href="https://github.com/ydvaayan/loss-unsup-adv" target="_blank">GitHub</a>
+            </div>
             <div class="project">
                 <h2>Sirius</h2>
                 <p>An agentic RAG system using SoTA techniques like AdaRAG, PlanRAG, HyDE, SPLADE, MetRAG, RRF etc.</p>
