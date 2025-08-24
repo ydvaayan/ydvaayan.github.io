@@ -460,3 +460,6 @@ footer {
 .news-section a:hover {
   text-decoration: underline;
 }
+.highlight-red {
+  color: red;
+}
